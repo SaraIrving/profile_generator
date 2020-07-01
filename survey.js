@@ -10,32 +10,24 @@ const rl = readline.createInterface({
 const answersArray = [];
 rl.question('What\'s your name? Nicknames are also acceptable :) ', (answer) => {
   answersArray.push(answer);
-  //console.log(answersArray);
-
+  
   rl.question('What\'s an activity you like doing? ', (answer) => {
     answersArray.push(answer);
-    //console.log(answersArray);
-    //rl.close();
-
+    
     rl.question('What do you listen to while doing that? ', (answer) => {
       answersArray.push(answer);
-      //console.log(answersArray);
       
       rl.question('Which meal is your favourite (eg: dinner, brunch, etc.)', (answer) => {
         answersArray.push(answer);
-        //console.log(answersArray);
         
         rl.question('What\'s your favourite thing to eat for that meal?', (answer) => {
           answersArray.push(answer);
-          //console.log(answersArray);
           
           rl.question('Which sport is your absolute favourite?', (answer) => {
             answersArray.push(answer);
-            //console.log(answersArray);
             
             rl.question('What is your superpower? In a few words, tell us what you are amazing at!', (answer) => {
               answersArray.push(answer);
-              //console.log(answersArray);
               
               rl.close();
               console.log(
